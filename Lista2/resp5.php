@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lista 2 de PHP</title>
+    <title>Lista de PHP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
@@ -12,10 +12,10 @@
         if ($_SERVER["REQUEST_METHOD"] == "POST"){
             $num1 = $_POST['num1'];
             $num2 = $_POST['num2'];
+            $num3 = $_POST['num3'];
 
-            $resultado = $num1 + $num2;
-
-            echo "Resultado: $num1 + $num2 = $resultado";
+            $media = ($num1 + $num2 + $num3) / 3;
+            echo "<p>A média das notas {$num1}, {$num2} e {$num3} é: {$media}</p>";
         }
         ?>
     </main>   
